@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://solqd.uz/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /assets/img/temp/
+
+# Allow important pages
+Allow: /technology/
+Allow: /company/
+Allow: /newsroom/
+Allow: /contact/
+Allow: /privacy/
+
+# Crawl delay (optional)
+Crawl-delay: 1
