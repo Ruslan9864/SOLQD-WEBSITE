@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукты — SolQD</title>
+    <meta name="description" content="Продукты SolQD: солнечные окна и тепличные плёнки на основе квантовых точек для генерации энергии и улучшения микроклимата.">
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" href="../css/base.css" as="style">
+    <link rel="preload" href="../css/layout.css" as="style">
+    <link rel="preload" href="../css/components.css" as="style">
+    <link rel="preload" href="../css/pages.css" as="style">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Продукты — SolQD">
+    <meta property="og:description" content="Продукты SolQD: солнечные окна и тепличные плёнки на основе квантовых точек для генерации энергии и улучшения микроклимата.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ruslan9864.github.io/SOLQD-WEBSITE/products/">
+    <meta property="og:image" content="https://ruslan9864.github.io/SOLQD-WEBSITE/assets/img/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Продукты — SolQD">
+    <meta name="twitter:description" content="Продукты SolQD: солнечные окна и тепличные плёнки на основе квантовых точек для генерации энергии и улучшения микроклимата.">
+    <meta name="twitter:image" content="https://ruslan9864.github.io/SOLQD-WEBSITE/assets/img/og-image.jpg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only">Перейти к содержимому</a>
+
+    <!-- Main Content -->
+    <main id="main">
+        <section class="technology-hero">
+            <div class="container">
+                <div class="technology-hero__content">
+                    <h1 class="technology-hero__title">Продукты SolQD</h1>
+                    <p class="technology-hero__subtitle">Инновационные решения на основе квантовых точек для генерации энергии и улучшения микроклимата</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="technology-content">
+            <div class="container">
+                <div class="products-grid">
+                    <div class="product-card reveal">
+                        <h3>Солнечные окна SolQD (LSC/BIPV)</h3>
+                        <p>Прозрачные окна, в которых люминесцентный межслой с квантовыми точками перенастраивает спектр света и направляет его к ячейкам на кромке — для генерации электроэнергии.</p>
+                        <ul>
+                            <li>Генерация энергии из фасадов</li>
+                            <li>Снижение теплопритоков</li>
+                            <li>Прозрачная интеграция в архитектуру</li>
+                            <li>Ориентир: ~20 Вт/м²</li>
+                        </ul>
+                        <a href="solar-windows/" class="btn btn--primary">Подробнее</a>
+                    </div>
+                    <div class="product-card reveal">
+                        <h3>Тепличные плёнки SolQD</h3>
+                        <p>Спектральные плёнки защищают от УФ и переизлучают полезный спектр под культуру. Доступны 3–4 типа оттенков, сезонная замена.</p>
+                        <ul>
+                            <li>Спектральная настройка под культуры</li>
+                            <li>УФ-защита растений</li>
+                            <li>Увеличение урожайности</li>
+                            <li>Ориентир: ~$10/м² за сезон</li>
+                        </ul>
+                        <a href="greenhouse-films/" class="btn btn--primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../js/header.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/io-reveal.js" defer></script>
+    
+    <script>
+        // Инициализация хедера и футера
+        document.addEventListener('DOMContentLoaded', function() {
+            // Загружаем хедер
+            const headerContainer = document.getElementById('header-container');
+            if (headerContainer && window.createHeader) {
+                headerContainer.innerHTML = window.createHeader('products');
+            }
+            
+            // Загружаем мобильное меню
+            const mobileMenuContainer = document.createElement('div');
+            mobileMenuContainer.innerHTML = window.createMobileMenu();
+            document.body.appendChild(mobileMenuContainer.firstElementChild);
+            
+            // Загружаем футер
+            const footerContainer = document.getElementById('footer-container');
+            if (footerContainer && window.createFooter) {
+                footerContainer.innerHTML = window.createFooter();
+            }
+        });
+    </script>
+</body>
+</html>
