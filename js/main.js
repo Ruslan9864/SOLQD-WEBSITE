@@ -88,6 +88,41 @@ function closeMobileMenu() {
     mobileMenu.classList.remove('mobile-menu--open');
     document.body.style.overflow = '';
     burger.setAttribute('aria-expanded', 'false');
+    
+    // Close all submenus
+    const submenus = mobileMenu.querySelectorAll('.mobile-menu__submenu--open');
+    submenus.forEach(submenu => {
+        submenu.classList.remove('mobile-menu__submenu--open');
+    });
+}
+
+// Initialize mobile menu functionality
+function initMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (!mobileMenu) return;
+    
+    // Add click handlers to main menu items with submenus
+    const menuItems = mobileMenu.querySelectorAll('.mobile-menu__item');
+    menuItems.forEach(item => {
+        const submenu = item.querySelector('.mobile-menu__submenu');
+        if (submenu) {
+            const mainLink = item.querySelector('.mobile-menu__link:first-child');
+            if (mainLink) {
+                mainLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    submenu.classList.toggle('mobile-menu__submenu--open');
+                });
+            }
+        }
+    });
+    
+    // Close submenus when clicking on submenu links
+    const submenuLinks = mobileMenu.querySelectorAll('.mobile-menu__submenu .mobile-menu__link');
+    submenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            closeMobileMenu();
+        });
+    });
 }
 
 function createMobileMenu() {

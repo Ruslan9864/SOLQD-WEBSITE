@@ -36,46 +36,46 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__content">
-                <a href="../" class="header__logo">
+                <a href="../index.html" class="header__logo" aria-label="SolQD - главная страница">
                     <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <text x="0" y="28" font-family="Inter" font-size="24" font-weight="700" fill="#0BA470">SolQD</text>
                     </svg>
                 </a>
                 
-                <nav class="header__nav">
+                <nav class="header__nav" id="header-nav">
                     <ul class="header__menu">
                         <li class="header__item">
-                            <a href="../technology/" class="header__link">Технологии</a>
+                            <a href="../technology/quantum-dots.html" class="header__link">Технологии</a>
                             <ul class="header__submenu">
-                                <li><a href="../technology/quantum-dots/">Квантовые точки</a></li>
-                                <li><a href="../technology/materials/">Материалы</a></li>
-                                <li><a href="../technology/focus/">Направления</a></li>
-                                <li><a href="../technology/purchase/">Купить материалы</a></li>
+                                <li><a href="../technology/quantum-dots.html">Квантовые точки</a></li>
+                                <li><a href="../technology/materials.html">Материалы</a></li>
+                                <li><a href="../technology/focus.html">Направления</a></li>
+                                <li><a href="../technology/purchase.html">Купить материалы</a></li>
                             </ul>
                         </li>
                         <li class="header__item">
-                            <a href="../company/" class="header__link">Компания</a>
+                            <a href="../company/vision.html" class="header__link">Компания</a>
                             <ul class="header__submenu">
-                                <li><a href="../company/vision/">Наша миссия</a></li>
-                                <li><a href="../company/team/">Команда</a></li>
-                                <li><a href="../company/board/">Совет</a></li>
-                                <li><a href="../company/samarkand/">Самарканд</a></li>
-                                <li><a href="../company/careers/">Вакансии</a></li>
+                                <li><a href="../company/vision.html">Миссия и ценности</a></li>
+                                <li><a href="../company/team.html">Команда</a></li>
+                                <li><a href="../company/samarkand.html">Самарканд</a></li>
+                                <li><a href="../company/careers.html">Вакансии</a></li>
+                                <li><a href="../company/board.html">Совет директоров</a></li>
                             </ul>
                         </li>
                         <li class="header__item">
-                            <a href="../newsroom/" class="header__link">Новости</a>
+                            <a href="../newsroom/newsroom.html" class="header__link">Новости</a>
                         </li>
                         <li class="header__item">
-                            <a href="./" class="header__link">Контакты</a>
+                            <a href="index.html" class="header__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
                 
-                <button class="header__burger" aria-label="Открыть меню">
+                <button class="header__burger" id="header-burger" aria-label="Открыть меню" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -95,47 +95,39 @@
         <nav class="mobile-menu__nav">
             <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
-                    <a href="../technology/" class="mobile-menu__link">Технологии</a>
+                    <a href="../technology/quantum-dots.html" class="mobile-menu__link">
+                        Технологии
+                        <svg class="mobile-menu__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                     <ul class="mobile-menu__submenu">
-                        <li class="mobile-menu__item">
-                            <a href="../technology/quantum-dots/" class="mobile-menu__link">Квантовые точки</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="../technology/materials/" class="mobile-menu__link">Материалы</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="../technology/focus/" class="mobile-menu__link">Направления</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="../technology/purchase/" class="mobile-menu__link">Купить материалы</a>
-                        </li>
+                        <li><a href="../technology/quantum-dots.html" class="mobile-menu__link">Квантовые точки</a></li>
+                        <li><a href="../technology/materials.html" class="mobile-menu__link">Материалы</a></li>
+                        <li><a href="../technology/focus.html" class="mobile-menu__link">Направления</a></li>
+                        <li><a href="../technology/purchase.html" class="mobile-menu__link">Купить материалы</a></li>
                     </ul>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="../company/" class="mobile-menu__link">Компания</a>
+                    <a href="../company/vision.html" class="mobile-menu__link">
+                        Компания
+                        <svg class="mobile-menu__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                     <ul class="mobile-menu__submenu">
-                        <li class="mobile-menu__item">
-                            <a href="../company/vision/" class="mobile-menu__link">Наша миссия</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="../company/team/" class="mobile-menu__link">Команда</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="../company/board/" class="mobile-menu__link">Совет</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="../company/samarkand/" class="mobile-menu__link">Самарканд</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="../company/careers/" class="mobile-menu__link">Вакансии</a>
-                        </li>
+                        <li><a href="../company/vision.html" class="mobile-menu__link">Миссия и ценности</a></li>
+                        <li><a href="../company/team.html" class="mobile-menu__link">Команда</a></li>
+                        <li><a href="../company/samarkand.html" class="mobile-menu__link">Самарканд</a></li>
+                        <li><a href="../company/careers.html" class="mobile-menu__link">Вакансии</a></li>
+                        <li><a href="../company/board.html" class="mobile-menu__link">Совет директоров</a></li>
                     </ul>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="../newsroom/" class="mobile-menu__link">Новости</a>
+                    <a href="../newsroom/newsroom.html" class="mobile-menu__link">Новости</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="./" class="mobile-menu__link">Контакты</a>
+                    <a href="index.html" class="mobile-menu__link">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -157,49 +149,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__section">
-                    <h3 class="footer__title">Технологии</h3>
-                    <ul class="footer__menu">
-                        <li><a href="../technology/quantum-dots/">Квантовые точки</a></li>
-                        <li><a href="../technology/materials/">Материалы</a></li>
-                        <li><a href="../technology/focus/">Направления</a></li>
-                        <li><a href="../technology/purchase/">Купить материалы</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Компания</h3>
-                    <ul class="footer__menu">
-                        <li><a href="../company/vision/">Наша миссия</a></li>
-                        <li><a href="../company/team/">Команда</a></li>
-                        <li><a href="../company/board/">Совет</a></li>
-                        <li><a href="../company/samarkand/">Самарканд</a></li>
-                        <li><a href="../company/careers/">Вакансии</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Контакты</h3>
-                    <div class="footer__contact">
-                        <p>Самарканд, Узбекистан</p>
-                        <p><a href="mailto:info@solqd.uz">info@solqd.uz</a></p>
-                        <p><a href="tel:+998901234567">+998 (90) 123-45-67</a></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer__bottom">
-                <p class="footer__copyright">© 2025 SolQD. Все права защищены.</p>
-                <a href="../privacy/" class="footer__privacy">Политика конфиденциальности</a>
-            </div>
-        </div>
-    </footer>
+    
 
     <!-- Scripts -->
-    <script src="../js/main.js"></script>
-    <script src="../js/io-reveal.js"></script>
+            <script src="../../js/main.js" defer></script>
+    <script src="../../js/io-reveal.js" defer></script>
 </body>
 </html>

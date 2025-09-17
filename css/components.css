@@ -504,6 +504,10 @@
     transform: translateX(0);
 }
 
+.footer {
+    will-change: transform;
+}
+
 [data-reveal="fade-in"] {
     transform: none;
 }
