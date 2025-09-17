@@ -23,10 +23,10 @@ function initHeader() {
     window.addEventListener('scroll', function() {
         const currentScrollY = window.scrollY;
         
-        if (currentScrollY > 100) {
-            header.classList.add('header--scrolled');
+        if (currentScrollY > 8) {
+            header.classList.add('is-scrolled');
         } else {
-            header.classList.remove('header--scrolled');
+            header.classList.remove('is-scrolled');
         }
         
         lastScrollY = currentScrollY;
@@ -43,6 +43,14 @@ function initHeader() {
             closeMobileMenu();
         }
     });
+    
+    // Mobile menu close button
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    if (mobileMenuClose) {
+        mobileMenuClose.addEventListener('click', function() {
+            closeMobileMenu();
+        });
+    }
     
     // Close mobile menu on escape key
     document.addEventListener('keydown', function(e) {
@@ -62,16 +70,9 @@ function initHeader() {
 // Mobile menu functions
 function openMobileMenu() {
     const burger = document.getElementById('header-burger');
-    const nav = document.getElementById('header-nav');
+    const mobileMenu = document.getElementById('mobile-menu');
     
-    if (!burger || !nav) return;
-    
-    // Create mobile menu if it doesn't exist
-    let mobileMenu = document.getElementById('mobile-menu');
-    if (!mobileMenu) {
-        mobileMenu = createMobileMenu();
-        document.body.appendChild(mobileMenu);
-    }
+    if (!burger || !mobileMenu) return;
     
     mobileMenu.classList.add('mobile-menu--open');
     document.body.style.overflow = 'hidden';

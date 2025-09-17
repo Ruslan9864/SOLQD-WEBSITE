@@ -30,9 +30,9 @@
 }
 
 .btn--primary:hover {
-    background-color: var(--color-accent);
-    border-color: var(--color-accent);
-    color: var(--color-dark);
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+    color: var(--color-white);
     transform: translateY(-1px);
     box-shadow: var(--shadow-lg);
 }
@@ -383,6 +383,60 @@
 .form__input--error {
     border-color: #ef4444 !important;
     box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
+}
+
+/* Newsletter form */
+.newsletter-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form__field {
+    display: flex;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+.newsletter-form__input {
+    flex: 1;
+    padding: var(--space-3) var(--space-4);
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    font-size: var(--text-base);
+    transition: all var(--transition-fast);
+}
+
+.newsletter-form__input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(11, 164, 112, 0.1);
+}
+
+.newsletter-form__checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+}
+
+.newsletter-form__checkbox input[type="checkbox"] {
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.newsletter-form__checkbox label {
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
+    color: var(--color-gray-600);
+}
+
+.newsletter-form__checkbox a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.newsletter-form__checkbox a:hover {
+    color: var(--color-primary-hover);
 }
 
 /* Animation classes */

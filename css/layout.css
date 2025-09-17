@@ -5,16 +5,16 @@
     position: sticky;
     top: 0;
     z-index: var(--z-sticky);
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color-gray-200);
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
     transition: all var(--transition-fast);
     width: 100%;
 }
 
-.header--scrolled {
-    background-color: var(--color-white);
-    box-shadow: var(--shadow-md);
+.header.is-scrolled {
+    background-color: rgba(255, 255, 255, 0.96);
+    backdrop-filter: saturate(140%) blur(8px);
+    box-shadow: 0 1px 0 #e5e7eb;
 }
 
 .header__content {
@@ -61,16 +61,22 @@
     display: flex;
     align-items: center;
     padding: var(--space-2) var(--space-4);
-    font-weight: 500;
-    color: var(--color-gray-700);
+    font-weight: 600;
+    color: #0f172a;
     text-decoration: none;
-    border-radius: var(--radius-md);
+    border-radius: 6px;
     transition: all var(--transition-fast);
 }
 
 .header__link:hover {
-    color: var(--color-primary);
+    color: #0ba470;
     background-color: var(--color-gray-100);
+}
+
+.header__link:focus-visible {
+    outline: 2px solid #0ba470;
+    outline-offset: 2px;
+    border-radius: 6px;
 }
 
 .header__submenu {
@@ -476,10 +482,12 @@
     transition: transform var(--transition-normal);
     overflow-y: auto;
     padding: var(--space-20) var(--space-6) var(--space-6);
+    display: none;
 }
 
 .mobile-menu--open {
     transform: translateX(0);
+    display: block;
 }
 
 .mobile-menu__close {
@@ -491,6 +499,18 @@
     font-size: var(--text-2xl);
     cursor: pointer;
     color: var(--color-gray-700);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.mobile-menu__close:hover {
+    background-color: var(--color-gray-100);
+    color: var(--color-primary);
 }
 
 .mobile-menu__nav {
@@ -504,7 +524,7 @@
 }
 
 .mobile-menu__item {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-2);
 }
 
 .mobile-menu__link {
@@ -521,6 +541,25 @@
 .mobile-menu__link:hover {
     color: var(--color-primary);
     background-color: var(--color-gray-100);
+}
+
+.mobile-menu__submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: var(--space-2);
+    margin-left: var(--space-4);
+}
+
+.mobile-menu__submenu .mobile-menu__link {
+    font-size: var(--text-base);
+    padding: var(--space-3) var(--space-4);
+}
+
+@media (min-width: 1024px) {
+    .mobile-menu {
+        display: none !important;
+    }
 }
 
 /* Footer */

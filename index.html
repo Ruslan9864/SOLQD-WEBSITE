@@ -76,29 +76,29 @@
                 <nav class="header__nav" id="header-nav">
                     <ul class="header__menu">
                         <li class="header__item">
-                            <a href="/technology/" class="header__link">Технологии</a>
+                            <a href="technology/" class="header__link">Технологии</a>
                             <ul class="header__submenu">
-                                <li><a href="/technology/quantum-dots/">Квантовые точки</a></li>
-                                <li><a href="/technology/materials/">Материалы</a></li>
-                                <li><a href="/technology/focus/">Направления</a></li>
-                                <li><a href="/technology/purchase/">Купить материалы</a></li>
+                                <li><a href="technology/quantum-dots/">Квантовые точки</a></li>
+                                <li><a href="technology/materials/">Материалы</a></li>
+                                <li><a href="technology/focus/">Направления</a></li>
+                                <li><a href="technology/purchase/">Купить материалы</a></li>
                             </ul>
                         </li>
                         <li class="header__item">
-                            <a href="/company/" class="header__link">Компания</a>
+                            <a href="company/" class="header__link">Компания</a>
                             <ul class="header__submenu">
-                                <li><a href="/company/vision/">Наша миссия</a></li>
-                                <li><a href="/company/team/">Команда</a></li>
-                                <li><a href="/company/board/">Совет</a></li>
-                                <li><a href="/company/samarkand/">Самарканд</a></li>
-                                <li><a href="/company/careers/">Вакансии</a></li>
+                                <li><a href="company/vision/">Наша миссия</a></li>
+                                <li><a href="company/team/">Команда</a></li>
+                                <li><a href="company/board/">Совет</a></li>
+                                <li><a href="company/samarkand/">Самарканд</a></li>
+                                <li><a href="company/careers/">Вакансии</a></li>
                             </ul>
                         </li>
                         <li class="header__item">
-                            <a href="/newsroom/" class="header__link">Новости</a>
+                            <a href="newsroom/" class="header__link">Новости</a>
                         </li>
                         <li class="header__item">
-                            <a href="/contact/" class="header__link">Контакты</a>
+                            <a href="contact/" class="header__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -112,8 +112,68 @@
         </div>
     </header>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Закрыть меню">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="technology/" class="mobile-menu__link">Технологии</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__item">
+                            <a href="technology/quantum-dots/" class="mobile-menu__link">Квантовые точки</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="technology/materials/" class="mobile-menu__link">Материалы</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="technology/focus/" class="mobile-menu__link">Направления</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="technology/purchase/" class="mobile-menu__link">Купить материалы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="company/" class="mobile-menu__link">Компания</a>
+                    <ul class="mobile-menu__submenu">
+                        <li class="mobile-menu__item">
+                            <a href="company/vision/" class="mobile-menu__link">Наша миссия</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="company/team/" class="mobile-menu__link">Команда</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="company/board/" class="mobile-menu__link">Совет</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="company/samarkand/" class="mobile-menu__link">Самарканд</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="company/careers/" class="mobile-menu__link">Вакансии</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="newsroom/" class="mobile-menu__link">Новости</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="contact/" class="mobile-menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only">Перейти к содержимому</a>
+
     <!-- Main Content -->
-    <main>
+    <main id="main">
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
@@ -121,8 +181,8 @@
                     <h1 class="hero__title">Квантовые точки для умных покрытий и света</h1>
                     <p class="hero__subtitle">SolQD превращает солнечный спектр в пользу бизнеса: наши материалы для окон, теплиц и фотоники повышают урожай, энергоэффективность и безопасность без токсичных компонентов.</p>
                     <div class="hero__actions">
-                        <a href="/contact/" class="btn btn--primary">Связаться</a>
-                        <a href="/newsroom/" class="btn btn--secondary">Смотреть новости</a>
+                        <a href="contact/" class="btn btn--primary">Связаться</a>
+                        <a href="newsroom/" class="btn btn--secondary">Смотреть новости</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +197,7 @@
                         <p>Квантовые точки — это нанокристаллы полупроводника, которые поглощают свет одних длин волн и переизлучают его на других. Изменяя размер и состав, мы «настраиваем» цвет и эффективность свечения. Это открывает путь к прозрачным солнечным элементам, люминесцентным тепличным покрытиям и умным меткам защиты.</p>
                         <p><strong>Ключевое:</strong> <em>яркость</em>, <em>настраиваемость спектра</em>, <em>стабильность</em>.</p>
                     </div>
-                    <a href="/technology/quantum-dots/" class="btn btn--primary">Узнать о технологии</a>
+                    <a href="technology/quantum-dots/" class="btn btn--primary">Узнать о технологии</a>
                 </div>
             </div>
         </section>
@@ -147,7 +207,7 @@
             <div class="container">
                 <div class="section__content">
                     <h2 class="section__title">Наши материалы</h2>
-                    <p class="section__subtitle">Crafted using Nobel Prize-winning technology, our materials are:</p>
+                    <p class="section__subtitle">Созданные с использованием технологии, удостоенной Нобелевской премии, наши материалы:</p>
                     
                     <div class="materials-grid">
                         <div class="material-card">
@@ -183,7 +243,7 @@
                         </div>
                     </div>
                     
-                    <a href="/technology/materials/" class="btn btn--primary">О материалах</a>
+                    <a href="technology/materials/" class="btn btn--primary">О материалах</a>
                 </div>
             </div>
         </section>
@@ -240,7 +300,7 @@
                         </div>
                     </div>
                     
-                    <a href="/technology/focus/" class="btn btn--primary">Смотреть направления</a>
+                    <a href="technology/focus/" class="btn btn--primary">Смотреть направления</a>
                 </div>
             </div>
         </section>
@@ -253,7 +313,7 @@
                     <div class="section__text">
                         <p>Мы — команда материаловедов и инженеров из Самарканда. Строим партнёрства с тепличными комплексами, девелоперами и производителями стекла/плёнок, поставляем материалы и создаём совместные решения.</p>
                     </div>
-                    <a href="/company/vision/" class="btn btn--primary">Наша миссия</a>
+                    <a href="company/vision/" class="btn btn--primary">Наша миссия</a>
                 </div>
             </div>
         </section>
@@ -265,14 +325,15 @@
                     <h2 class="section__title">Подписка на новости</h2>
                     <p class="section__subtitle">Подписывайтесь на рассылку, чтобы быть в курсе новостей и релизов.</p>
                     
-                    <form class="newsletter-form" id="newsletter-form">
+                    <form class="newsletter-form" id="newsletter-form" action="#" method="post">
                         <div class="newsletter-form__field">
-                            <input type="email" name="email" placeholder="Ваш e-mail" required class="newsletter-form__input">
+                            <label class="visually-hidden" for="nl-email">E-mail</label>
+                            <input id="nl-email" type="email" name="email" placeholder="Ваш e-mail" required class="newsletter-form__input">
                             <button type="submit" class="btn btn--primary">Подписаться</button>
                         </div>
                         <div class="newsletter-form__checkbox">
                             <input type="checkbox" name="consent" id="newsletter-consent" required>
-                            <label for="newsletter-consent">Подписываясь, вы соглашаетесь с <a href="/privacy/">Политикой конфиденциальности</a></label>
+                            <label for="newsletter-consent">Подписываясь, вы соглашаетесь с <a href="privacy/">Политикой конфиденциальности</a></label>
                         </div>
                     </form>
                 </div>
@@ -287,21 +348,21 @@
                 <div class="footer__section">
                     <h3 class="footer__title">Технологии</h3>
                     <ul class="footer__menu">
-                        <li><a href="/technology/quantum-dots/">Квантовые точки</a></li>
-                        <li><a href="/technology/materials/">Материалы</a></li>
-                        <li><a href="/technology/focus/">Направления</a></li>
-                        <li><a href="/technology/purchase/">Купить материалы</a></li>
+                        <li><a href="technology/quantum-dots/">Квантовые точки</a></li>
+                        <li><a href="technology/materials/">Материалы</a></li>
+                        <li><a href="technology/focus/">Направления</a></li>
+                        <li><a href="technology/purchase/">Купить материалы</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
                     <h3 class="footer__title">Компания</h3>
                     <ul class="footer__menu">
-                        <li><a href="/company/vision/">Наша миссия</a></li>
-                        <li><a href="/company/team/">Команда</a></li>
-                        <li><a href="/company/board/">Совет</a></li>
-                        <li><a href="/company/samarkand/">Самарканд</a></li>
-                        <li><a href="/company/careers/">Вакансии</a></li>
+                        <li><a href="company/vision/">Наша миссия</a></li>
+                        <li><a href="company/team/">Команда</a></li>
+                        <li><a href="company/board/">Совет</a></li>
+                        <li><a href="company/samarkand/">Самарканд</a></li>
+                        <li><a href="company/careers/">Вакансии</a></li>
                     </ul>
                 </div>
                 
@@ -314,27 +375,27 @@
                     </div>
                     
                     <div class="footer__social">
-                        <a href="https://instagram.com/solqd" aria-label="Instagram" class="footer__social-link">
+                        <a href="https://instagram.com/solqd" aria-label="Instagram SolQD" class="footer__social-link" target="_blank" rel="noopener noreferrer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" fill="none"/>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" fill="none"/>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                             </svg>
                         </a>
-                        <a href="https://t.me/solqd" aria-label="Telegram" class="footer__social-link">
+                        <a href="https://t.me/solqd" aria-label="Telegram SolQD" class="footer__social-link" target="_blank" rel="noopener noreferrer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21.198 3.148H2.802C1.806 3.148 1 3.954 1 4.95v14.1c0 .996.806 1.802 1.802 1.802h18.396c.996 0 1.802-.806 1.802-1.802V4.95c0-.996-.806-1.802-1.802-1.802z" stroke="currentColor" stroke-width="2" fill="none"/>
                                 <path d="M8 12l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
-                        <a href="https://linkedin.com/company/solqd" aria-label="LinkedIn" class="footer__social-link">
+                        <a href="https://linkedin.com/company/solqd" aria-label="LinkedIn SolQD" class="footer__social-link" target="_blank" rel="noopener noreferrer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" fill="none"/>
                                 <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" fill="none"/>
                                 <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" fill="none"/>
                             </svg>
                         </a>
-                        <a href="https://youtube.com/@solqd" aria-label="YouTube" class="footer__social-link">
+                        <a href="https://youtube.com/@solqd" aria-label="YouTube SolQD" class="footer__social-link" target="_blank" rel="noopener noreferrer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" stroke="currentColor" stroke-width="2" fill="none"/>
                                 <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="currentColor"/>
@@ -346,7 +407,7 @@
             
             <div class="footer__bottom">
                 <p class="footer__copyright">© 2025 SolQD. Все права защищены.</p>
-                <a href="/privacy/" class="footer__privacy">Политика конфиденциальности</a>
+                <a href="privacy/" class="footer__privacy">Политика конфиденциальности</a>
             </div>
         </div>
     </footer>
