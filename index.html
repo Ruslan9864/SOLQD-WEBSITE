@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SolQD — Квантовые точки для окон, теплиц и фотоники</title>
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" href="css/base.css" as="style">
+    <link rel="preload" href="css/layout.css" as="style">
+    <link rel="preload" href="css/components.css" as="style">
+    <link rel="preload" href="css/pages.css" as="style">
     <meta name="description" content="SolQD разрабатывает безопасные материалы на основе квантовых точек для агро, солнечной энергетики и защитных чернил. Повышаем эффективность света.">
     
     <!-- Open Graph -->
@@ -67,7 +75,7 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header__content">
-                <a href="/" class="header__logo" aria-label="SolQD - главная страница">
+                <a href="./" class="header__logo" aria-label="SolQD - главная страница">
                     <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <text x="0" y="28" font-family="Inter" font-size="24" font-weight="700" fill="#0BA470">SolQD</text>
                     </svg>
@@ -413,7 +421,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/io-reveal.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/io-reveal.js" defer></script>
 </body>
 </html>

@@ -1,110 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main pages -->
     <url>
-        <loc>https://solqd.uz/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/</loc>
+        <lastmod>2025-01-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    
+    <!-- Technology pages -->
     <url>
-        <loc>https://solqd.uz/technology/quantum-dots/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/technology/quantum-dots/</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/technology/materials/</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/technology/focus/</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/technology/purchase/</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Company pages -->
+    <url>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/company/vision/</loc>
+        <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://solqd.uz/technology/materials/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/company/team/</loc>
+        <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://solqd.uz/technology/focus/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/company/board/</loc>
+        <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://solqd.uz/technology/purchase/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/company/samarkand/</loc>
+        <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://solqd.uz/company/vision/</loc>
-        <lastmod>2025-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/company/careers/</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
+    
+    <!-- Other pages -->
     <url>
-        <loc>https://solqd.uz/company/team/</loc>
-        <lastmod>2025-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://solqd.uz/company/board/</loc>
-        <lastmod>2025-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://solqd.uz/company/samarkand/</loc>
-        <lastmod>2025-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://solqd.uz/company/careers/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/newsroom/</loc>
+        <lastmod>2025-01-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://solqd.uz/newsroom/</loc>
-        <lastmod>2025-01-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://solqd.uz/newsroom/post-2025-08-02-agrofilm-pilots.html</loc>
-        <lastmod>2025-08-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://solqd.uz/newsroom/post-2025-07-15-solarwindow-concept.html</loc>
-        <lastmod>2025-07-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://solqd.uz/newsroom/post-2025-06-28-tashkent-conference.html</loc>
-        <lastmod>2025-06-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://solqd.uz/newsroom/post-2025-05-10-new-masterbatch.html</loc>
-        <lastmod>2025-05-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://solqd.uz/newsroom/post-2025-04-22-integrators-program.html</loc>
-        <lastmod>2025-04-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://solqd.uz/contact/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/contact/</loc>
+        <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://solqd.uz/privacy/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <loc>https://ruslan9864.github.io/SOLQD-WEBSITE/privacy/</loc>
+        <lastmod>2025-01-27</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
