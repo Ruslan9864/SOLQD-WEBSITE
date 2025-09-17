@@ -17,10 +17,11 @@ function initHeader() {
     
     if (!header || !burger || !nav) return;
     
-    // Sticky header effect
+    // Sticky header effect with debounce
     let lastScrollY = window.scrollY;
+    let ticking = false;
     
-    window.addEventListener('scroll', function() {
+    function updateHeader() {
         const currentScrollY = window.scrollY;
         
         if (currentScrollY > 8) {
@@ -30,6 +31,14 @@ function initHeader() {
         }
         
         lastScrollY = currentScrollY;
+        ticking = false;
+    }
+    
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(updateHeader);
+            ticking = true;
+        }
     });
     
     // Mobile menu toggle

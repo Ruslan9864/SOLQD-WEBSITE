@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — SolQD</title>
+    <meta name="description" content="Свяжитесь с SolQD: Самарканд, Узбекистан. info@solqd.uz, +998 (90) 123-45-67. Закажите пилот, расчёт фасада или плёнки для теплиц.">
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" href="../css/base.css" as="style">
+    <link rel="preload" href="../css/layout.css" as="style">
+    <link rel="preload" href="../css/components.css" as="style">
+    <link rel="preload" href="../css/pages.css" as="style">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Контакты — SolQD">
+    <meta property="og:description" content="Свяжитесь с SolQD: Самарканд, Узбекистан. info@solqd.uz, +998 (90) 123-45-67. Закажите пилот, расчёт фасада или плёнки для теплиц.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ruslan9864.github.io/SOLQD-WEBSITE/contacts/">
+    <meta property="og:image" content="https://ruslan9864.github.io/SOLQD-WEBSITE/assets/img/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Контакты — SolQD">
+    <meta name="twitter:description" content="Свяжитесь с SolQD: Самарканд, Узбекистан. info@solqd.uz, +998 (90) 123-45-67. Закажите пилот, расчёт фасада или плёнки для теплиц.">
+    <meta name="twitter:image" content="https://ruslan9864.github.io/SOLQD-WEBSITE/assets/img/og-image.jpg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only">Перейти к содержимому</a>
+
+    <!-- Main Content -->
+    <main id="main">
+        <section class="technology-hero">
+            <div class="container">
+                <div class="technology-hero__content">
+                    <h1 class="technology-hero__title">Контакты</h1>
+                    <p class="technology-hero__subtitle">Свяжитесь с нами для заказа пилота, расчёта фасада или получения консультации</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="technology-content">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Наши контакты</h2>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>Адрес</h3>
+                                <p>Самарканд, Узбекистан</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@solqd.uz">info@solqd.uz</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Телефон</h3>
+                                <p><a href="tel:+998901234567">+998 (90) 123-45-67</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section">
+                        <h2>Написать нам</h2>
+                        <form class="contact-form" id="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Имя *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Компания</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="request-type">Тип запроса *</label>
+                                <select id="request-type" name="request_type" required>
+                                    <option value="">Выберите тип запроса</option>
+                                    <option value="pilot">Пилот</option>
+                                    <option value="facade">Расчёт фасада</option>
+                                    <option value="greenhouse">Плёнки для теплиц</option>
+                                    <option value="materials">Купить материалы</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">Я согласен с <a href="../privacy/" target="_blank">Политикой конфиденциальности</a> *</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--large">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../js/header.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/io-reveal.js" defer></script>
+    
+    <script>
+        // Инициализация хедера и футера
+        document.addEventListener('DOMContentLoaded', function() {
+            // Загружаем хедер
+            const headerContainer = document.getElementById('header-container');
+            if (headerContainer && window.createHeader) {
+                headerContainer.innerHTML = window.createHeader('contacts');
+            }
+            
+            // Загружаем мобильное меню
+            const mobileMenuContainer = document.createElement('div');
+            mobileMenuContainer.innerHTML = window.createMobileMenu();
+            document.body.appendChild(mobileMenuContainer.firstElementChild);
+            
+            // Загружаем футер
+            const footerContainer = document.getElementById('footer-container');
+            if (footerContainer && window.createFooter) {
+                footerContainer.innerHTML = window.createFooter();
+            }
+        });
+    </script>
+</body>
+</html>

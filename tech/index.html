@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технологии — SolQD</title>
+    <meta name="description" content="Квантовые точки, материалы и технологии SolQD для солнечных окон и тепличных плёнок.">
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" href="../css/base.css" as="style">
+    <link rel="preload" href="../css/layout.css" as="style">
+    <link rel="preload" href="../css/components.css" as="style">
+    <link rel="preload" href="../css/pages.css" as="style">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Технологии — SolQD">
+    <meta property="og:description" content="Квантовые точки, материалы и технологии SolQD для солнечных окон и тепличных плёнок.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ruslan9864.github.io/SOLQD-WEBSITE/tech/">
+    <meta property="og:image" content="https://ruslan9864.github.io/SOLQD-WEBSITE/assets/img/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Технологии — SolQD">
+    <meta name="twitter:description" content="Квантовые точки, материалы и технологии SolQD для солнечных окон и тепличных плёнок.">
+    <meta name="twitter:image" content="https://ruslan9864.github.io/SOLQD-WEBSITE/assets/img/og-image.jpg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SolQD",
+        "url": "https://ruslan9864.github.io/SOLQD-WEBSITE/",
+        "logo": "https://ruslan9864.github.io/SOLQD-WEBSITE/assets/img/logo.svg",
+        "description": "Разработка материалов на основе квантовых точек для солнечных окон и тепличных плёнок",
+        "foundingDate": "2024-03",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Самарканд",
+            "addressCountry": "UZ"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only">Перейти к содержимому</a>
+
+    <!-- Main Content -->
+    <main id="main">
+        <section class="technology-hero">
+            <div class="container">
+                <div class="technology-hero__content">
+                    <h1 class="technology-hero__title">Технологии SolQD</h1>
+                    <p class="technology-hero__subtitle">Квантовые точки для управления светом на нано-уровне</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="technology-content">
+            <div class="container">
+                <div class="tech-grid">
+                    <div class="tech-card reveal">
+                        <h3>Квантовые точки</h3>
+                        <p>Нанокристаллы полупроводника, которые поглощают свет одних длин волн и переизлучают на других.</p>
+                        <a href="qdots/" class="btn btn--primary">Подробнее</a>
+                    </div>
+                    <div class="tech-card reveal">
+                        <h3>Материалы</h3>
+                        <p>QD-мастербатч и композиты для стекла и плёнок от лабораторных партий до пилотного масштаба.</p>
+                        <a href="materials/" class="btn btn--primary">Подробнее</a>
+                    </div>
+                    <div class="tech-card reveal">
+                        <h3>Направления</h3>
+                        <p>Фасады, теплицы, защитные чернила и другие применения квантовых точек.</p>
+                        <a href="focus/" class="btn btn--primary">Подробнее</a>
+                    </div>
+                    <div class="tech-card reveal">
+                        <h3>Купить материалы</h3>
+                        <p>Доступны QD-мастербатч, пленочные полуфабрикаты и малые партии.</p>
+                        <a href="buy/" class="btn btn--primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../js/header.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/io-reveal.js" defer></script>
+    
+    <script>
+        // Инициализация хедера и футера
+        document.addEventListener('DOMContentLoaded', function() {
+            // Загружаем хедер
+            const headerContainer = document.getElementById('header-container');
+            if (headerContainer && window.createHeader) {
+                headerContainer.innerHTML = window.createHeader('tech');
+            }
+            
+            // Загружаем мобильное меню
+            const mobileMenuContainer = document.createElement('div');
+            mobileMenuContainer.innerHTML = window.createMobileMenu();
+            document.body.appendChild(mobileMenuContainer.firstElementChild);
+            
+            // Загружаем футер
+            const footerContainer = document.getElementById('footer-container');
+            if (footerContainer && window.createFooter) {
+                footerContainer.innerHTML = window.createFooter();
+            }
+        });
+    </script>
+</body>
+</html>

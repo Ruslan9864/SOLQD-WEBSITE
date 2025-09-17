@@ -451,6 +451,25 @@
     }
 }
 
+/* Performance optimizations */
+.hero__content,
+.hero__image,
+.technology-hero__content,
+.newsletter,
+.footer {
+    will-change: transform;
+}
+
+/* Optimize repaints */
+.header {
+    contain: layout style;
+}
+
+.hero,
+.technology-hero {
+    contain: layout style paint;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

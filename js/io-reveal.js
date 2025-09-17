@@ -13,10 +13,12 @@ function initRevealAnimations() {
         return;
     }
     
-    // Create intersection observer
+    // Create intersection observer with optimized settings
     const observer = new IntersectionObserver(handleIntersection, {
         threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        rootMargin: '0px 0px -50px 0px',
+        // Use passive listener for better performance
+        passive: true
     });
     
     // Observe all elements with data-reveal attribute

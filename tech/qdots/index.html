@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квантовые точки — SolQD</title>
+    <meta name="description" content="Квантовые точки SolQD: управляем светом на нано-уровне. Настраиваемый спектр, безопасность, совместимость с полимерами.">
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" href="../../css/base.css" as="style">
+    <link rel="preload" href="../../css/layout.css" as="style">
+    <link rel="preload" href="../../css/components.css" as="style">
+    <link rel="preload" href="../../css/pages.css" as="style">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Квантовые точки — SolQD">
+    <meta property="og:description" content="Квантовые точки SolQD: управляем светом на нано-уровне. Настраиваемый спектр, безопасность, совместимость с полимерами.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ruslan9864.github.io/SOLQD-WEBSITE/tech/qdots/">
+    <meta property="og:image" content="https://ruslan9864.github.io/SOLQD-WEBSITE/assets/img/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Квантовые точки — SolQD">
+    <meta name="twitter:description" content="Квантовые точки SolQD: управляем светом на нано-уровне. Настраиваемый спектр, безопасность, совместимость с полимерами.">
+    <meta name="twitter:image" content="https://ruslan9864.github.io/SOLQD-WEBSITE/assets/img/og-image.jpg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Skip Link -->
+    <a href="#main" class="sr-only">Перейти к содержимому</a>
+
+    <!-- Main Content -->
+    <main id="main">
+        <section class="technology-hero">
+            <div class="container">
+                <div class="technology-hero__content">
+                    <h1 class="technology-hero__title">Квантовые точки: управляем светом на нано-уровне</h1>
+                    <p class="technology-hero__subtitle">Нанокристаллы полупроводника, которые поглощают свет одних длин волн и переизлучают на других</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="technology-content">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Что такое квантовые точки</h2>
+                    <p>Квантовые точки — нанокристаллы полупроводника, которые поглощают свет одних длин волн и переизлучают на других. Изменяя размер и состав, мы «настраиваем» цвет и эффективность свечения под задачу: фасадные LSC-окна, агроплёнки, защитные метки.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <h3>Яркость</h3>
+                        <p>Высокое квантовое свечение с настраиваемым спектром излучения</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <h3>Спектральная гибкость</h3>
+                        <p>Возможность настройки цвета и длины волны излучения</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <h3>Стабильность</h3>
+                        <p>Долговременная стабильность свойств в различных условиях</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <h3>Совместимость</h3>
+                        <p>Отличная совместимость с полимерами и межслоями</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../../js/header.js" defer></script>
+    <script src="../../js/main.js" defer></script>
+    <script src="../../js/io-reveal.js" defer></script>
+    
+    <script>
+        // Инициализация хедера и футера
+        document.addEventListener('DOMContentLoaded', function() {
+            // Загружаем хедер
+            const headerContainer = document.getElementById('header-container');
+            if (headerContainer && window.createHeader) {
+                headerContainer.innerHTML = window.createHeader('tech');
+            }
+            
+            // Загружаем мобильное меню
+            const mobileMenuContainer = document.createElement('div');
+            mobileMenuContainer.innerHTML = window.createMobileMenu();
+            document.body.appendChild(mobileMenuContainer.firstElementChild);
+            
+            // Загружаем футер
+            const footerContainer = document.getElementById('footer-container');
+            if (footerContainer && window.createFooter) {
+                footerContainer.innerHTML = window.createFooter();
+            }
+        });
+    </script>
+</body>
+</html>
